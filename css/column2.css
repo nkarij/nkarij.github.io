@@ -1,0 +1,251 @@
+/* -------------------------------------------------------------
+----------------- MOBILE VERSION ---------------------------------
+-------------------------------------------------------------- */
+
+@media screen and (max-width: 800px) {
+
+    :root {
+        --column-template-size: 100px;
+    }
+
+    
+    /* WHAT I DO BEST SECTION
+    ---------------------------------------------------------------------*/
+    
+    .do-best-section {
+        /* padding: var(--col-small-section-padding); */
+    }
+    
+    /* icons */
+
+    .icon-display {
+        padding: 0rem; 
+    } 
+
+    .icon-list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 2rem;
+    }
+
+
+    .icon-list:first-of-type {
+        margin-bottom: 3rem;
+    }
+
+    /* */
+    .best-list-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 2rem;
+    }
+
+    /* .best-list {
+    } */
+
+    .best-list__item {
+        /* list-style-type: disc; */
+        margin: 1rem 0;
+    }
+
+
+    /* WORK EXPERIENCE SECTION
+    ---------------------------------------------------------------------*/
+    .experience__list {
+        list-style-type: none;
+        /* padding: var(--col-small-section-padding); */
+        margin: 0;
+    }
+
+    .experience__template {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.25em 0;
+        border-bottom: solid 1px grey;
+    }
+
+    .experience__template:first-of-type {
+        border-top: solid 1px grey;
+    }
+
+    .experience__year {
+        width: 30%;
+    }
+
+    .bullet-list {  
+        /* sørger for at elementet expanderer sammen med vw */
+        /* flex-grow: 1; */
+        width: 70%;
+    }
+
+    .bullet {
+        margin: 0.2em;
+    }
+
+
+    /* 
+    --------SKILLS SECTION------------------------------------ */
+
+    .skills-section {
+        /* margin-top: var(--mobile-section-margin-top) */
+    }
+
+    /* .skills-list {
+        
+    } */
+
+    .skills-item {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .skills-item__description {
+        /* width: 150px; */
+        height: 20px;
+    }
+    
+    .skills-item__ranking {
+        display: flex;
+        align-items: center;
+    }
+
+    .skills-circle {
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        margin-right: 5px;
+    }
+
+
+}
+
+
+/* -------------------------------------------------------------
+-----------------WEB VERSION ---------------------------------
+-------------------------------------------------------------- */
+
+@media screen and (min-width: 800px) {
+
+    :root {
+        --section-padding: 0 8rem;
+        --column-template-size: 150px;
+    }    
+
+    /* .do-best-section {
+       
+    } */
+    
+    .icon-display {
+        padding: var(--section-padding);
+        margin-top: 3rem;
+    } 
+
+    .icon-list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .icon-list:first-of-type {
+        margin-bottom: 3rem;
+    }
+
+    /* */
+    .best-list-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 2rem;
+        padding: 3rem 8rem;
+    }
+
+    .best-list {
+        margin: 0 2.5rem;
+    }
+
+    .best-list__item {
+        list-style-type: disc;
+        margin: 1rem 0;
+    }
+
+   
+    /* WORK EXPERIENCE SECTION
+    ---------------------------------------------------------------------*/
+    .experience__list {
+        list-style-type: none;
+        padding: var(--section-padding);
+        padding-top: 2rem;
+        margin: 0;
+    }
+
+    .experience__template {
+        display: flex;
+        align-items: center;
+        padding: 0.25em 0;
+        border-bottom: solid 1px grey;
+    }
+
+    .experience__template:first-of-type {
+        border-top: solid 1px grey;
+    }
+
+    .experience__year {
+        width: 30%;
+        height: 20px;
+    }
+
+    .bullet-list {  
+        /* sørger for at elementet expanderer sammen med vw */
+        /* flex-grow: 1; */
+    }
+
+    .bullet {
+        margin: 0.2em;
+    }
+
+
+    /* 
+    --------SKILLS SECTION------------------------------------ */
+
+    /* .skills-section {
+        
+    } */
+
+    .skills-list {
+        padding: var(--section-padding);
+        padding-top: 2rem;
+    }
+
+    .skills-item {
+        display: flex;
+        /* justify-content: space-between; */
+    }
+
+    .skills-item:first-of-type {
+        margin-top: 0;
+    }
+
+    .skills-item__description {
+        width: 30%;
+        height: 20px;
+    }
+    
+    .skills-item__ranking {
+        display: flex;
+        align-items: center;
+    }
+
+    .skills-circle {
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        margin-right: 5px;
+    }
+
+}
+/* media query ends */

@@ -1,0 +1,141 @@
+/*---------------------------------------------------
+GRIDS
+----------------------------------------------------*/
+
+:root {
+    --grid-padding-topbot: calc(var(--page-padding-topbot)*2);
+    --grid-padding-sides: calc(var(--page-padding-sides)*2);
+    --grid-height: calc(var(--body-desktop-height) - var(--grid-padding-topbot));
+    --grid-width: calc(var(--body-desktop-width) - var(--grid-padding-sides));
+}
+
+/* -------------------------------------------------------------
+----------------- MOBILE VERSION ---------------------------------
+-------------------------------------------------------------- */
+
+@media screen and (max-width: 800px) {
+
+    .grid {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+
+    .header {
+        order: 1;
+    }
+
+    .contact-section__text {
+        display: flex;
+        justify-content: space-between;
+        width: 120px;
+    }
+    
+    .do-best-section {
+        order: 2;
+    }
+
+    .experience-section {
+        order: 3;
+    }
+
+    .skills-section {
+        order: 4;
+    }
+
+    .profile-section__heading {
+        order: 5;
+    }
+
+    .profile-section {
+        order: 6;
+    }
+
+    .some-menu-heading {
+        order: 7;
+    }
+
+    .frontpage-navigation {
+        order: 8;
+    }
+
+
+
+}
+
+/* -------------------------------------------------------------
+----------------- WEB VERSION ---------------------------------
+-------------------------------------------------------------- */
+
+@media screen and (min-width: 800px) {
+
+    /* PAGE GRID LAYOUTS
+    ---------------------------------------------------------------*/
+    .grid {
+        height: var(--grid-height);
+        width: var(--grid-width);
+        display: grid;
+        grid-template-columns: 25% 55%;
+        /* denne skal muligvis fjernes/ændres senere */
+        grid-template-rows: 30px 40px 70vh 40px 45% 40px 30%;
+        padding-left: 13%;
+    }
+    
+
+    /* COLUMN 1 GRID
+    ---------------------------------------------------------------------*/
+
+    .header {
+        /* row start, column start, row end, column end */
+       grid-area: 2 / 1 / 4 / 1;
+    }
+
+    .contact-section__text {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 150px;
+    }
+
+    .profile-section__heading {
+        grid-area: 4 / 1 / 5 / 1;
+    }
+    
+    .profile-section {
+        /* row start, column start, row end, column end */
+        grid-area: 5 / 1 / 6 / 1;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+    }
+
+    .some-menu-heading {
+        grid-area:  6 / 1 / 7 / 1;
+    }
+
+    .frontpage-navigation {
+        /* row start, column start, row end, column end */
+        grid-area:  7 / 1 / 8 / 1;
+    }
+
+    /* COLUMN 2 GRID
+    ---------------------------------------------------------------------*/
+
+    .do-best-section {
+        /* row start, column start, row end, column end */
+        grid-area:  2 / 2 / 4 / 3;
+    }
+
+    .experience-section {
+        /* row start, column start, row end, column end */
+        grid-area:  4 / 2 / 6 / 3;
+    }
+
+    .skills-section {
+        /* row start, column start, row end, column end */
+        grid-area:  6 / 2 / 8 / 3;
+    }
+
+}
+

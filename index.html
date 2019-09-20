@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/e7b358accd.js"></script>
+    <title>Portfolio</title>
+</head>
+<body class="body">
+
+    <!-- page grid -->
+    <div class="grid frontpage">
+        <!-- COLUMN 1 -->
+        <!-- header section -->
+        <header class="header">
+            <div class="portrait-wrapper">
+                <image src="IMG/profilbillede1.jpg" class="portrait"></image>
+            </div>    
+            <!-- headings -->
+            <h1 class="heading heading-part1">NANNA KARI</h1>
+            <h2 class="heading heading-part2">Web developer</h2>
+            
+            <!-- contact info section  -->
+            <h2 id="contact-heading" class="sub-heading contact-section__heading">Contact</h2>
+            <address class="contact-section">
+                <a href="" class="contact-icon">
+                    <div class="contact-section__text">
+                        <p>Email</p>
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                </a>
+                <a href="" class="contact-icon">
+                    <div class="contact-section__text">
+                        <p>Telephone  </p> 
+                        <i class="fas fa-phone"></i>
+                    </div>
+                </a>
+            </address>
+        </header>
+
+        <!-- Profile text  -->
+        <h2 class="sub-heading profile-section__heading">Profile</h2>
+        <section class="profile-section">
+            <p class="profile-section__text">
+            Visual media has been my passion for almost 15 years, and it is also the red thread that ties my working life together into one (I think) perfect whole.
+            </p>
+            <p class="profile-section__text">
+            The seed was sown in a dark cinema hall many years ago, where a Swedish Silent Films captivated me. As the story also reveals - despite a rather glamorous career - I'm a pretty solid nerd.
+            </p>
+            <p class="profile-section__text">
+            I tend to call myself systematically creative, and that is also why I left journalism, which, near the end, had no limits. 
+            </p>
+            <p class="profile-section__text">
+            With the freedom that programming structures offers me, I feel like a fish in the water. And if I want to, I can someday code a movie.
+            </p>
+        </section>
+
+        <!-- SOME navigation -->
+        <h2 class="sub-heading some-menu-heading col-1">Social Media</h2>               
+        <nav class="frontpage-navigation">
+            <ul class="list menu-right">
+                <li class="menu-right__item">
+                    <a href="https://www.facebook.com/nannakarijensen" class="menu_link menu-right__link">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                    <p class="menu-right__explainer">facebook</p>
+                </li>
+                <li class="menu-right__item">
+                    <a href="https://www.linkedin.com/in/nanna-kari-jensen-b807774/" class="menu_link menu-right__link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <p class="menu-right__explainer">LinkedIn</p>
+                <li class="menu-right__item">
+                    <a href="#" class="menu_link menu-right__link">IC</a>
+                    <p class="menu-right__explainer">Lorem ipsum</p>
+                </li>
+            </ul>
+        </nav>
+
+    <!-- COLUMN 2  -->
+                    
+        <!-- WHAT I DO BEST -->
+        <div class="do-best-section">
+            <h2 class="sub-heading col-2">What I Do Best</h2>
+
+            <!-- icon section -->
+            <div class="icon-display">
+                <!-- row -->
+                <ul class="icon-list">
+                    <li class="icon-item">
+                        <i class="fas fa-object-group"></i>
+                    </li>
+                    <li class="icon-item">
+                        <i class="fas fa-cart-plus"></i>
+                    </li>
+                    <li class="icon-item">
+                        <i class="fas fa-file-code"></i>
+                    </li>
+                </ul>
+                <!-- row -->
+                <ul class="icon-list">
+                    <li class="icon-item">
+                        <i class="fas fa-comments"></i>
+                    </li>
+                    <li class="icon-item">
+                        <i class="fas fa-laptop-code"></i>
+                    </li>
+                    <li class="icon-item">
+                        <i class="fas fa-tasks"></i>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- best list section -->
+            <div class="best-list-section">
+                <ul class="list best-list">
+                    <li class="best-list__item">Functionality</li>
+                    <li class="best-list__item">Grid & Flexbox</li>
+                    <li class="best-list__item">Readable Code</li>
+                </ul>
+                <ul class="list best-list">
+                    <li class="best-list__item">Communication</li>
+                    <li class="best-list__item">Programming</li>
+                    <li class="best-list__item">Getting Things Done</li>
+                </ul>
+            </div>
+
+        </div><!-- WHAT I DO ends -->
+
+        <!-- EXPERIENCE SECTION -->
+        <section class="experience-section">
+            <h2 class="sub-heading experience__heading col-2">Experience</h2>
+
+            <ul class="list experience__list">
+
+                <li class="experience__template">
+                    <h3 class="experience__year"> May 2021</h3>
+                    <!-- denne section expanderer med sin parent (flex-grow) -->
+                    <ul class="list bullet-list">
+                        <li class="bullet">C# & Full Stack Developer </li>
+                        <li class="bullet">Jönköping Uni, Campus Värnamo</li>
+                        <li class="bullet">C# .NET, React</li>
+                    </ul>
+                </li>
+
+                <li class="experience__template">
+                    <h3 class="experience__year">Jan 2020</h3>
+                    <!-- denne section expanderer med sin parent (flex-grow) -->
+                    <ul class="list bullet-list">
+                        <li class="bullet">Frontend Engineer</li>
+                        <li class="bullet">Roskilde Tech</li>
+                        <li class="bullet ">Javascript, Node.js, Express, React, SQL/Database</li>
+                    </ul>
+                </li>
+
+                <li class="experience__template">
+                    <h3 class="experience__year">2006-2018</h3>
+                    <!-- denne section expanderer med sin parent (flex-grow) -->
+                    <ul class="list bullet-list">
+                        <li class="bullet">TV Journalist</li>
+                        <li class="bullet">Danish Broadcasting, TV2 etc</li>
+                        <li class="bullet">Field & Video journalist</li>
+                    </ul>
+                </li>
+            </ul>
+        </section> <!-- experience section ends -->
+
+        <!-- SKILLS SECTION -->
+        <div class="skills-section">
+            <h2 class="sub-heading skills-heading col-2">Skills</h2>
+            <div class="skills-list">
+                <ul class="skills-item">
+                    <li class="skills-item__description">Javascript</li>
+                    <li class="skills-item__ranking"> 
+                        <div class="skills-circle"></div>
+                        <div class="skills-circle"></div>
+                        <div class="skills-circle"></div>
+                        <div class="skills-circle"></div>
+                        <div class="skills-circle"></div>
+                    </li>
+                </ul>
+                <ul class="skills-item">
+                    <li class="skills-item__description">Dataservices</li>
+                    <li class="skills-item__ranking"> 
+                        <div data-circle="1" class="skills-circle"></div>
+                        <div data-circle="2" class="skills-circle"></div>
+                        <div class="skills-circle"></div>
+                        <div class="skills-circle dot"></div>
+                        <div class="skills-circle dot"></div>
+                    </li>
+                </ul>
+                <ul class="skills-item">
+                    <li class="skills-item__description">React/Native</li>
+                    <li class="skills-item__ranking"> 
+                        <div class="skills-circle"></div>
+                        <div data-circle="2" class="skills-circle"></div>
+                        <div class="skills-circle dot"></div>
+                        <div class="skills-circle dot"></div>
+                        <div class="skills-circle dot"></div>
+                    </li>
+                </ul>
+                <ul class="skills-item">
+                    <li class="skills-item__description">Advanced Frontend</li>
+                    <li class="skills-item__ranking"> 
+                        <div class="skills-circle"></div>
+                        <div data-circle="2" class="skills-circle"></div>
+                        <div class="skills-circle"></div>
+                        <div class="skills-circle"></div>
+                        <div class="skills-circle dot"></div>
+                    </li>
+                </ul>
+                <ul class="skills-item">
+                    <li class="skills-item__description">Advanced CSS</li>
+                    <li class="skills-item__ranking"> 
+                        <div class="skills-circle"></div>
+                        <div data-circle="2" class="skills-circle"></div>
+                        <div class="skills-circle"></div>
+                        <div class="skills-circle dot"></div>
+                        <div class="skills-circle dot"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div> <!-- pagegrid ends -->
+</body>
+</html>

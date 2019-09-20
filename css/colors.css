@@ -1,0 +1,151 @@
+:root {
+    --col-small-section-padding: 1rem 0;
+    --animation-color: #6f8699;
+    --base-color: linear-gradient(to right top, #67575b, #625354, #5c4f4e, #564b49, #504744);
+    --content-color: #FFFBFF;
+    --headings-color: rgb(196, 149, 31);
+    --decoration-color: rgb(72, 75, 63);
+    --font-color-scnd: #cedad5;
+    --large-icons: #504746;
+}
+
+/* box-shadow: 0px 0px 3px 0px rgba(230,221,221,1); */
+
+@media screen and (max-width: 800px) {
+    .body {
+        background: var(--base-color);
+    }
+
+    .sub-heading {
+        background-color: var(--headings-color);
+        box-shadow: 0px 0px 3px 0px rgba(41,37,37,1);
+        text-shadow: 1px 0px 1px rgb(131, 131, 131);
+    }
+
+    .portrait {
+        border: 3px solid var(--decoration-color);
+        box-shadow: 0px 0px 3px 0px rgba(41,37,37,1);
+    }
+
+    .contact-section__heading {
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    #contact-heading {
+        padding-left: 0;
+    }
+
+    .contact-section__text p {
+        text-shadow: 1px 0px 1px rgb(53, 53, 53);
+    }
+
+    /* icons */
+
+    .fas {
+        font-size: 6rem;
+        color: var(--headings-color)
+    }
+
+    .fa-cart-plus::before, .fa-cart-plus {
+        margin-left: -10px;
+    }
+
+
+    .fa-envelope, .fa-phone {
+        font-size: 2.5rem;
+        color: var(--font-color-scnd);
+    }
+
+
+    .skills-circle {
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        background-color: var(--headings-color);
+        margin-right: 5px;
+        box-shadow: 0px 0px 2px 0px rgb(70, 69, 69);
+    }
+
+    .dot {
+        background-color: rgb(56, 56, 56);
+    }
+
+    .menu_link:after {
+        background: var(--animation-color);
+    }
+    
+}
+
+
+@media screen and (min-width: 800px) {
+
+    .body {
+        background: var(--base-color);
+        background-repeat: round;
+    }
+
+    .sub-heading {
+        background-color: var(--headings-color);
+        box-shadow: 0px 0px 3px 0px rgba(41,37,37,1);
+        text-shadow: 1px 0px 1px rgb(128, 128, 128);
+    }
+
+    .portrait {
+        border: 1px solid rgba(41,37,37,1);
+        box-shadow: 0px 0px 2px 0px rgba(41,37,37,1);
+    }
+    
+    .contact-section {
+        border: 2px solid var(--base-color);
+        padding: 0.5rem;
+    }
+
+    .contact-section__heading {
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    .contact-section__text p {
+        text-shadow: 1px 0px 1px rgb(53, 53, 53);
+    }
+    /* icons */
+
+    .icon-list .fas {
+        font-size: 8rem;
+        color: var(--large-icons)
+    }
+
+    .fa-cart-plus::before, .fa-cart-plus {
+        margin-left: -10px;
+    }
+
+    .fa-envelope, .fa-phone {
+        color: var(--font-color-scnd);
+    }
+    
+    .experience-section, .do-best-section, .skills-section {
+        background-color: var(--content-color);
+    }
+
+
+    .skills-circle {
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        background-color: var(--headings-color);
+        margin-right: 5px;
+        box-shadow: 0px 0px 2px 0px rgb(70, 69, 69);
+    }
+
+    .dot {
+        background-color: var(--decoration-color);
+    }
+
+    .menu_link:after {
+        background: var(--animation-color);
+    }
+
+}

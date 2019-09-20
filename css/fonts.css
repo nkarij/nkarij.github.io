@@ -1,0 +1,175 @@
+/* FONTS
+----------------------------------------------------*/
+
+:root {
+    --font-heading: 'Mansalva', cursive;
+    --font-subheading: 'Nunito', sans-serif;
+    --fontsize-subheading: 3rem;
+    --font-bullets: 'Open Sans', sans-serif;
+    --font-color-primary: black;
+    --font-color-scnd: #cedad5;
+    --bullet-items-size: 1.5rem; 
+}
+
+/* -------------------------------------------------------------
+----------------- MOBILE VERSION ---------------------------------
+-------------------------------------------------------------- */
+
+
+/* VARIABLES
+------------------------------------*/
+
+html {
+    font-size: 10px;
+}
+
+/* COLUMN 1
+-------------------------------------------------------------------------*/
+
+/* PAGE HEADINGS
+------------------------------------*/
+.heading {
+    font-family: var(--font-heading);
+    color: var(--font-color-primary);
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1;
+    margin: 2rem 0;
+}
+
+.heading-part1 {
+    margin-bottom: 0;
+}
+
+.heading-part2 {
+    margin-top: 0;
+}
+
+.sub-heading {
+    height: 46px;
+    font-family: var(--font-subheading);
+    font-size: var(--fontsize-subheading);
+    color: var(--font-color-primary);
+    font-weight: bold;
+    margin: 0;
+    padding-top: .5rem;
+    padding-left: 1rem;
+}
+
+
+.sub-heading.col-2 {
+    padding-left: 1rem;
+}
+
+#contact-heading {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    padding-left: 0;
+    margin-top: 1.5rem;
+}
+
+.contact-section__text {
+    display: block;
+    font-family: var(--font-bullets);
+    font-size: 2.2rem;
+    color: var(--font-color-scnd);
+    margin-top: 0;
+}
+
+.profile-section__text {
+    font-family: var(--font-bullets);
+    font-size: var(--bullet-items-size);
+    margin: 0;
+}
+
+/* SOME NAVIGATION
+------------------------------------*/
+
+.menu-right {
+    border-left: 1.5px dashed var(--font-color-scnd);
+    padding-left: 1.5rem;
+    margin-left: 1rem;
+}
+
+.menu-right__link {
+    font-family: var(--font-heading);
+    color: var(--font-color-primary);
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.menu-right__explainer {
+    margin: 0.5rem 0;
+    font-family: var(--font-subheading);
+    color: var(--font-color-scnd);
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+
+
+/* COLUMN 2
+-------------------------------------------------------------------------*/
+
+/* do best list */
+
+.best-list__item {
+    font-family: var(--font-bullets);
+    font-size: var(--bullet-items-size);
+    font-weight: bold;
+}
+
+/* experience section */
+
+.experience__year {
+    font-family: var(--font-bullets);
+    font-size: var(--bullet-items-size);
+    font-weight: bold;
+}
+
+.bullet {
+    font-family: var(--font-bullets);
+    font-size: var(--bullet-items-size);
+}
+
+.bullet:first-child {
+    font-weight: bold;
+}
+
+
+/* SKILLS SECTION */
+
+.skills-item__description {
+    font-family: var(--font-bullets);
+    font-size: var(--bullet-items-size);
+}
+
+
+/* -------------------------------------------------------------
+----------------- WEB VERSION ---------------------------------
+-------------------------------------------------------------- */
+
+@media screen and (max-width: 800px) {
+    .best-list__item {
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+    
+    .bullet {
+        font-size: 1.3rem;
+        /* font-weight: bold; */
+    }
+
+    .menu-right__explainer {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    #contact-heading {
+        /* font-family: var(--font-heading); */
+        padding-left: 0;
+        margin-top: 1.5rem;
+    }
+    
+}
