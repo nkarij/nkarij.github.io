@@ -194,13 +194,12 @@
     }
 
     .experience__year {
-        width: 30%;
+        width: 20%;
         height: 20px;
     }
 
     .bullet-list {  
-        /* sørger for at elementet expanderer sammen med vw */
-        /* flex-grow: 1; */
+        width: 75%;
     }
 
     .bullet {

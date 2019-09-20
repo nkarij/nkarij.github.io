@@ -78,7 +78,7 @@ GRIDS
         display: grid;
         grid-template-columns: 25% 55%;
         /* denne skal muligvis fjernes/ændres senere */
-        grid-template-rows: 30px 40px 70vh 40px 45% 40px 30%;
+        grid-template-rows: 30px 40px 75vh 40px 45% 40px 30%;
         padding-left: 13%;
     }
     
